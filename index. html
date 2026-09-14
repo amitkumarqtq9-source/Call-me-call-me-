@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Call Me Call Me</title>
+<style>
+body{font-family:Arial;background:#111;color:white;text-align:center;padding:20px}
+.box{background:#222;padding:20px;border-radius:15px;margin-top:30px}
+input{width:90%;padding:12px;margin:10px;border-radius:10px;border:none}
+button{width:95%;padding:12px;background:#00ff88;color:black;font-weight:bold;border:none;border-radius:10px;margin-top:10px}
+.google{background:white;color:black}
+</style>
+</head>
+<body>
+<h1>Call Me Call Me 📞</h1>
+<p>Free Audio Video Call App</p>
+<div class="box">
+<h2>Login</h2>
+<input type="text" placeholder="Mobile Number डालो">
+<button>OTP से Login करो</button>
+<button class="google">Google से Login करो</button>
+<button onclick="alert('Login Successful! Welcome to Call Me Call Me')">Direct Login (Demo)</button>
+</div>
+</body>
+</html>
