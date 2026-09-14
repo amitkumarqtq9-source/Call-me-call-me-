@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Call Me Call Me</title>
+<style>
+body{font-family:Arial;text-align:center;background:#f0f0f0;padding:20px}
+.box{background:white;padding:30px;border-radius:20px;max-width:400px;margin:50px auto;box-shadow:0 5px 15px rgba(0,0,0,0.2)}
+button{background:#25D366;color:white;border:none;padding:15px 30px;font-size:20px;border-radius:50px;cursor:pointer;width:100%}
+input{padding:12px;width:90%;margin:10px 0;border-radius:10px;border:1px solid #ccc;font-size:16px}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>📞 Call Me Call Me</h1>
+<p>अपना नाम और नंबर डालो</p>
+<input id="name" placeholder="आपका नाम">
+<input id="number" placeholder="आपका नंबर">
+<button onclick="callMe()">Call Me पर क्लिक करो</button>
+<p id="msg"></p>
+</div>
+<script>
+function callMe(){
+let n=document.getElementById('name').value;
+let num=document.getElementById('number').value;
+if(n==""||num==""){alert("नाम और नंबर डालो भाई!");return;}
+document.getElementById('msg').innerHTML="धन्यवाद "+n+"! आपका नंबर "+num+" सेव हो गया ✅";
+}
+</script>
+</body>
+</html>
